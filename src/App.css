@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.game-img{
+  display: block;
+  height: 300px;
+  margin: auto;
+
+}
+
+.game-title{
+  color: darkorchid;
+  font-weight: 900;
+}
