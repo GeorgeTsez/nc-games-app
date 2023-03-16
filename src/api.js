@@ -11,3 +11,14 @@ export const getAllReviews = () => {
     console.log(error);
   })
 }
+export const getSingleReview = (review_id) => {
+  return axios.get(`https://nc-games-app.onrender.com/api/reviews/${review_id}`) 
+  .then(function ({data}) { 
+    return data.review
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+
+}
