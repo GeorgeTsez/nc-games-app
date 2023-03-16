@@ -12,7 +12,7 @@ function Reviews() {
   return reviews.map((review)=>{
     return <div key={review.review_id}>
       <p className="game-title"> {review.title} </p>
-      <button className="button" onClick={(()=>{navigate(`/reviews/${review.review_id}`)})}></button>
+      <button className="button" onClick={(()=>{navigate(`/reviews/${review.review_id}`)})}>Read about the game</button>
       <p className="game-designer">{review.designer}</p>
        <img src = {review.review_img_url} className = "game-img"></img>
        <p className="game-date"> {review.created_at}</p>
