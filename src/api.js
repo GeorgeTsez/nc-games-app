@@ -22,3 +22,14 @@ export const getSingleReview = (review_id) => {
   })
 
 }
+export const getComments = (review_id) => {
+  return axios.get(`https://nc-games-app.onrender.com/api/reviews/${review_id}/comments`) 
+  .then(function (response) { 
+    console.log(response.data.comments)
+    return response.data.comments
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+
+}
