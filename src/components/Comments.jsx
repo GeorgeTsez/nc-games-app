@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { getComments } from "../api";
+
 import { useParams} from "react-router-dom";
+
+import { useParams } from "react-router-dom";
+
 
 function Comments() {
   const [comments, setComments] = useState([]);
