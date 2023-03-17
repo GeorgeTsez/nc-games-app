@@ -62,7 +62,8 @@ margin-top: unset;
   margin-bottom: auto;
 }
 .button{
-  
+  object-position: center;
+  color: green;
 }
 
 .comment{

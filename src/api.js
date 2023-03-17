@@ -33,3 +33,11 @@ export const getComments = (review_id) => {
   })
 
 }
+
+export const patchVotes = (review_id, votes) =>{
+return axios.patch(`https://nc-games-app.onrender.com/api/reviews/${review_id}`,{inc_votes:votes})
+.then((response)=>{
+  console.log(response.data.review.votes)
+})
+
+}
