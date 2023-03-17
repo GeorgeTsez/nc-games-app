@@ -14,7 +14,11 @@ function Reviews() {
       <p className="game-title"> {review.title} </p>
       <button className="button" onClick={(()=>{navigate(`/reviews/${review.review_id}`)})}>Read about the game</button>
       <p className="game-designer">{review.designer}</p>
+
+       <img src = {review.review_img_url} className = "game-img" alt="people-gaming"></img>
+
        <img src = {review.review_img_url} className = "game-img" alt="people-play-games"></img>
+
        <p className="game-date"> {review.created_at}</p>
     </div>
 
