@@ -48,6 +48,26 @@
   color: darkorchid;
   font-weight: 900;
 }
+
+.game-date{   color: royalblue;
+font-weight: bold;
+padding-bottom: 35px;
+margin-top: unset;
+}
+
+.game-designer{
+  color: revert;
+  font-weight: bold;
+  padding-bottom: 7px;
+  margin-bottom: auto;
+}
 .button{
   
+}
+
+.comment{
+  color: black;
+  font-weight: bold;
+  padding-top: 35px;
+  margin-top: 9px;
 }
