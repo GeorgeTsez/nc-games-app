@@ -13,7 +13,7 @@ function Comments() {
   }, []);
   return comments.map((comment)=>{
     return <div key={comment.comment_id}>
-        <p>People Also said:</p>
+        <p>{comment.author} said:</p>
     <p className="comment">{comment.body}</p>
     </div>
   })
