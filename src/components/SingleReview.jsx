@@ -17,7 +17,7 @@ function SingleReview() {
      <p className="game-title">{singleReview.title}</p>
      <p className="game-designer">{singleReview.designer}</p>
      <p>votes:{singleReview.votes}</p>
-     <img src ={singleReview.review_img_url}></img>
+     <img src ={singleReview.review_img_url} alt="people-gaming"></img>
      <button className="button" onClick={(()=>{navigate(`/reviews/${review_id}/comments`)})}>Get to the comments</button>
      <p className="game-date">{singleReview.created_at}</p>
      <p>{singleReview.owner}</p>
