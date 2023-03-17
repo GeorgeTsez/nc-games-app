@@ -37,7 +37,6 @@ function SingleReview() {
       setSingleReview(review);
     });
   }, [review_id]);
-  console.log(singleReview);
   return (
     <div>
 
