@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getComments } from "../api";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 function Comments() {
   const [comments, setComments] = useState([]);
@@ -10,7 +10,7 @@ function Comments() {
       setComments(comments);
       console.log(comments)
     });
-  }, []);
+  }, [review_id]);
   return comments.map((comment)=>{
     return <div key={comment.comment_id}>
         <p>{comment.author} said:</p>

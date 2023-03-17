@@ -49,7 +49,7 @@ function SingleReview() {
       <button className="button" onClick={decreaseVotes} disabled={voted}>
         Downvote
       </button>
-      <img src={singleReview.review_img_url}></img>
+      <img src={singleReview.review_img_url} alt="people-gaming"></img>
       <button
         className="button"
         onClick={() => {
